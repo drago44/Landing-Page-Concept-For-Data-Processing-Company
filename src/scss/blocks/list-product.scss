@@ -1,0 +1,29 @@
+.list-product {
+  display: flex;
+  justify-content: space-between;
+  // .list-product__item
+
+  &__item {
+  }
+
+  // .list-product__value
+
+  &__value {
+    font-family: 'Montserrat', sans-serif;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #212b36;
+  }
+
+  // .list-product__name
+
+  &__name {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: #637381;
+  }
+}

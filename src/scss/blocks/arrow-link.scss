@@ -1,0 +1,13 @@
+.arrow-link {
+  width: 90px;
+  height: 80px;
+  background: #13c296;
+  border-radius: 9px;
+  background-image: url("../img/crooked-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 41px 21px;
+  &:hover {
+    box-shadow: -16.0895px 24.1342px 36.6483px rgba(19, 194, 150, 0.24);
+  }
+}

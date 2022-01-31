@@ -1,0 +1,135 @@
+.features {
+  margin: 0 0 80px 0;
+  position: relative;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 160px 0;
+  }
+  &__wrap {
+    @media (min-width: $desktop-width) {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: -220px;
+        width: 350px;
+        height: 566px;
+        background-size: 350px 566px;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+      }
+      &::before {
+        left: -50px;
+        background-image: url("../img/bg-dot-lines-left.svg");
+      }
+      &::after {
+        right: 0px;
+        background-image: url("../img/bg-dot-lines-right.svg");
+      }
+    }
+  }
+  // .features__slogan-wrap
+
+  &__slogan-wrap {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 50px 0;
+  }
+
+  // .features__slogan
+
+  &__slogan {
+    font-family: 'Inter', sans-serif;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(34px + (42 - 34) * ((100vw - 320px) / (1220 - 320)));
+    line-height: calc(40px + (50 - 40) * ((100vw - 320px) / (1220 - 320)));
+    color: $greenmint;
+    margin: 0 0 13px 0;
+  }
+
+  // .features__slogan-text
+
+  &__slogan-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  // .features__list
+
+  &__list {
+  }
+
+  // .features__list-wrap
+
+  &__list-wrap {
+    max-width: 998px;
+    margin: 0 auto;
+  }
+
+  // .features__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+  // .features__item
+
+  &__item {
+    display: grid;
+    grid-template-rows: 38%;
+    margin: 0 0 0 52px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -52px;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 24px;
+    }
+    &--ecstatic::before {
+      background-image: url("../img/Ecstatic.svg");
+    }
+    &--airpods::before {
+      background-image: url("../img/Airpods.svg");
+    }
+    &--possible::before {
+      background-image: url("../img/Possible.svg");
+    }
+    &--open-game::before {
+      background-image: url("../img/Open-game.svg");
+    }
+    &--endeavor::before {
+      background-image: url("../img/Endeavor.svg");
+    }
+    &--comfort::before {
+      background-image: url("../img//Comfort.svg");
+    }
+  }
+
+  // .features__name
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $greenmint;
+    max-width: 200px;
+    margin: 0 0 10px 0;
+  }
+
+  // .features__desc
+
+  &__desc {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

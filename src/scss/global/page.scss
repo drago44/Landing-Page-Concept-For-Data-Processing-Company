@@ -1,0 +1,23 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  background: $darkblue;
+  color: $purple;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+
+  overflow: auto;
+
+  min-height: 100%;
+  margin: 0;
+}
+
+.main{
+  background: linear-gradient(222.26deg, #3b1d60 1.22%, #040d3e 106.28%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

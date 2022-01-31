@@ -1,0 +1,44 @@
+.start-up {
+  // .start-up__wrap
+  margin: 0 0 80px 0;
+  position: relative;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 50px 0;
+  }
+
+  &__wrap {
+    height: 550px;
+    background-image: url("../img/bg-start-up-lines.svg"), url("../img/bg-start-up-dots.png");
+    background-repeat: no-repeat;
+    background-size: auto 456px, auto 330px;
+    background-position: left 53% top 53%, center bottom;
+  }
+
+  // .start-up__content-wrap
+
+  &__content-wrap {
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  // .start-up__slogan
+
+  &__slogan {
+    font-family: "Inter", sans-serif;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 0 46px 0;
+    color: $greenmint;
+    span {
+      color: $orange;
+    }
+  }
+
+  // .start-up__btn
+
+  &__btn {
+  }
+}

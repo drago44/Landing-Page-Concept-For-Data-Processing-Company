@@ -1,0 +1,26 @@
+.list-socials {
+  // .list-socials__item
+
+  &__item {
+    background: rgb(246, 246, 246, 0.1);
+    width: 44px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin: 0 16px 0 0;
+    }
+  }
+
+  // .list-socials__link
+
+  &__link {
+  }
+
+  // .list-socials__img
+
+  &__img {
+  }
+}

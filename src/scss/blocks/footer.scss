@@ -1,0 +1,139 @@
+.footer {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+
+  background-image: url("../img/bg-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 2040px 1112px;
+  background-position: top;
+
+  // .footer__wrap
+
+  &__wrap {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    padding: 60px 0 70px 0;
+  }
+
+  // .footer__top
+
+  &__top {
+    margin: 0 0 86px 0;
+  }
+
+  // .footer__socials
+
+  &__socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .footer__socials-name
+
+  &__socials-name {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.325px;
+    color: $orange;
+    span {
+      text-transform: uppercase;
+    }
+    &:not(:last-child) {
+      margin: 0 36px 46px 0;
+    }
+    @media (min-width: $tablet-width) {
+      &:not(:last-child) {
+        margin: 0 36px 0 0;
+      }
+    }
+  }
+
+  // .footer__socials-list
+
+  &__socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .footer__main
+
+  &__main {
+  }
+
+  // .footer__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // .footer__nav-col
+
+  &__nav-col {
+    margin: 0 0 60px 0;
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 30px 0 0;
+    }
+  }
+  // .footer__nav-col-name
+
+  &__nav-col-name {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $white;
+    margin: 0 0 25px 0;
+  }
+
+  // .footer__nav-col-list
+
+  &__nav-col-list {
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+
+  // .footer__copyright-text
+
+  &__copyright-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #8d8d8d;
+    &:not(:last-child) {
+      margin: 0 0 36px 0;
+    }
+    @media (min-width: $tablet-width) {
+      &:not(:last-child) {
+        margin: 0 36px 0 0;
+      }
+    }
+  }
+}

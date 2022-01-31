@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  // .header__wrap
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 0 0 0;
+    @media (min-width: $tablet-width) {
+      padding: 60px 0 0 0;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 80px 0 0 0;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    z-index: 5;
+    img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  // .header__menu
+
+  // &__menu {
+  // }
+}

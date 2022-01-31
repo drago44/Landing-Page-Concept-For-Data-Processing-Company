@@ -1,0 +1,33 @@
+.aside {
+  display: none;
+  // .aside__value
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 130px;
+    padding: 15.5px 0;
+    background: #516ea9;
+    box-shadow: -8px 16px 60px rgba(82, 114, 139, 0.24);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  &__value {
+    font-family: "Montserrat", sans-serif;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+  }
+
+  // .aside__name
+
+  &__name {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    color: $white;
+  }
+}

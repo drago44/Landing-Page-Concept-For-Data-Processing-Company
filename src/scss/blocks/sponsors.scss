@@ -1,0 +1,35 @@
+.sponsors {
+  // .sponsors__list
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0 0 78px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: space-around;
+  }
+
+  // .sponsors__item
+
+  &__item {
+    text-align: center;
+    margin: 0 0 20px 0;
+    padding: 0 5px;
+    flex: 1 0 33%;
+    img {
+      opacity: 0.3;
+    }
+    img:hover,
+    img:active,
+    img:focus {
+      opacity: 1;
+    }
+    @media (min-width: $tablet-width) {
+      flex: 0;
+    }
+  }
+}

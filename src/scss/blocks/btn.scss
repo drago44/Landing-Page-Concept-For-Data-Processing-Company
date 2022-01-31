@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  border: 1px solid $orange;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 155px;
+  padding: 13px 0;
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+  }
+}
+
+.btn--orange {
+  background-color: $orange;
+  color: $white;
+}
+.btn--inherit {
+  background-color: inherit;
+  color: $orange;
+}
+
+.btn--small {
+  width: 112px;
+  padding: 5px 0;
+}

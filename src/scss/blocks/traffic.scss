@@ -1,0 +1,131 @@
+.traffic {
+  margin: 0 0 80px 0;
+  position: relative;
+  @media (min-width: $desktop-width) {
+    margin: 0 0 150px 0;
+  }
+
+  // .traffic__wrap
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 970px;
+    margin: 0 auto;
+    @media (min-width: $tablet-width) {
+      justify-content: space-around;
+    }
+    @media (min-width: $desktop-width) {
+      justify-content: space-between;
+    }
+  }
+
+  // .traffic__slogan-wrap
+
+  &__slogan-wrap {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    @media (min-width: $tablet-width) {
+      max-width: 340px;
+      text-align: left;
+    }
+    @media (min-width: $desktop-width) {
+      max-width: 450px;
+    }
+  }
+
+  // .traffic__slogan
+
+  &__slogan {
+    font-family: "Inter", sans-serif;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin: 45px 0 32px 0;
+    color: $greenmint;
+    span {
+      color: $orange;
+    }
+  }
+
+  // .traffic__text
+
+  &__slogan-text {
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin: 0 0 43px 0;
+  }
+
+  // .traffic__btn
+
+  &__btn {
+    margin: 0 0 40px 0;
+  }
+
+  // .traffic__img-wrap
+
+  &__img-wrap {
+    background: url("../img/bg-dot-square.png") no-repeat;
+    background-position: right bottom;
+    width: 100%;
+    max-width: 440px;
+    height: 320px;
+    position: relative;
+    @media (min-width: $tablet-width) {
+      max-width: 340px;
+      height: 400px;
+    }
+    @media (min-width: $desktop-width) {
+      max-width: 440px;
+    }
+  }
+
+  // .traffic__overview-img
+
+  &__overview-img {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 50%;
+    max-width: 232px;
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  // .traffic__hand-img
+
+  &__hand-img {
+    position: absolute;
+    top: 0;
+    left: 107px;
+    width: 60%;
+    max-width: 286px;
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  // .traffic__link-arrow
+
+  &__link-arrow {
+    position: absolute;
+    top: 204px;
+    left: 59%;
+    width: 90px;
+    height: 80px;
+    @media (min-width: $tablet-width) {
+      top: 292px;
+      left: 145px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 318px;
+      left: 145px;
+    }
+  }
+}

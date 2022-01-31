@@ -1,0 +1,181 @@
+.help {
+  margin: 0 0 50px 0;
+
+  background-image: url("../img/bg-help-dots-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 385px 567px;
+  background-position: right bottom -50px;
+  @media (min-width: $desktop-width) {
+  margin: 0 0 80px 0;
+  }
+  // .help__wrap
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @media (min-width: $tablet-width) {
+      justify-content: space-around;
+    }
+    @media (min-width: $desktop-width) {
+      justify-content: space-between;
+    }
+  }
+
+  // .help__img-wrap
+
+  &__img-wrap {
+    position: relative;
+    width: 100%;
+    height: 446px;
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-help-dots-top.png"), url("../img/bg-help-dots-right.png"),
+        url("../img/bg-help-triangle.png");
+      background-repeat: no-repeat;
+      background-size: 132px 63px, 66px 63px, 111px 134px;
+      background-position: left 45px top, right 55px bottom 145px, left bottom 83px;
+      background-position: left 45px top, right bottom 145px, left bottom 83px;
+      max-width: 494px;
+    }
+    @media (min-width: $desktop-width) {
+      background-position: left 45px top, right 55px bottom 145px, left bottom 83px;
+      max-width: 50%;
+    }
+  }
+
+  // .help__img
+
+  &__img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: auto;
+    @media (min-width: $tablet-width) {
+      width: 375px;
+      top: 23px;
+      left: 78px;
+      transform: none;
+    }
+  }
+
+  // .help__content-wrap
+
+  &__content-wrap {
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    @media (min-width: $tablet-width) {
+      padding: 100px 0 0 0;
+      max-width: 494px;
+    }
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      padding: 100px 0 0 38px;
+      max-width: 50%;
+    }
+  }
+
+  // .help__slogan-wrap
+
+  &__slogan-wrap {
+    margin: 0 0 100px 0;
+  }
+
+  // .help__slogan
+
+  &__slogan {
+    font-family: "Inter", sans-serif;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.325px;
+    color: $greenmint;
+    margin: 0 0 32px 0;
+  }
+
+  // .help__slogan-text
+
+  &__slogan-text {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  // .help__features-list
+
+  &__features-list {
+  }
+
+  // .help__features-items
+
+  &__features-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // .help__features-item
+
+  &__features-item {
+    // max-width: 224px;
+    margin: 0 0 100px 0;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -52px;
+      left: 50%;
+      transform: translateX(-75%);
+      width: 36px;
+      height: 36px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 36px;
+      @media (min-width: $desktop-width) {
+        top: -52px;
+        left: 0;
+        transform: none;
+      }
+    }
+    @media (min-width: $tablet-width) {
+      max-width: 220px;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 0 10px 0 0;
+      max-width: 220px;
+    }
+
+    &--possible::before {
+      background-image: url("../img/Possible.svg");
+    }
+    &--swiss-knife::before {
+      background-image: url("../img/Swiss-knife.svg");
+    }
+  }
+
+  // .help__features-name
+
+  &__features-name {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $greenmint;
+    margin: 0 0 8px 0;
+  }
+
+  // .help__features-desc
+
+  &__features-desc {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+}
